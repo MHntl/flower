@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <!--FONTAWESOME CDN YETKİSİ-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!------NAVBAR------>
+    <div class="navbar">
+        <!--MENU-LOGO-->
+        <div class="navbar-left">
+            <a class="navbar-left-logo" href="www.google.com">Yeşilzihin</a>
+            <div class="navbar-left-menü">
+                <a href="#">Anasayfa</a>
+                <a href="#">Ürünler</a>
+                <a href="#">İletişim</a>
+            </div>
+        </div>
+        <!--ICON-->
+        <div class="navbar-right">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+    <!------BANNER------>
+    <div class="banner">
+        <div class="banner-left">
+            <h1>Hayalinizdeki ürünleri <a class="ss" href="#top">satın alın </a></h1>
+            <div class="banner-left-contents">
+                <div class="contents">
+                    <p>50+</p><!--Block Elementtir kendi satırında çalışır.Satırın tamanını kapsar-->
+                    <span>Bitki türleri</span><!--INLINE elementtir sadece içerigi kadar alanı kapsar-->
+                </div>
+                <div class="contents">
+                    <p>100+</p>
+                    <span>Müşteriler</span>
+                </div>
+            </div>
+            <div class="banner-left-search">
+                <input type="text" placeholder="Ne Aramıştınız..."><!--Arama-Search Çugugu-->
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="banner-right">
+            <div class="banner-right-bg">
+                <img src="./assets/banner.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!------PRODUCT------>
+    <div class="product">
+        <div class="product-title">
+            <h1>En çok satan bitkiler</h1>
+            <span>Favori bitkilerinizi satın alarak sağlıklı yaşam için yol açın</span>
+            <button class="more">Daha fazla</button>
+        </div>
+
+        <div class="product-cards responsive">
+            <div class="product-card reponsive2">
+                <img src="./assets/product1.png" alt="">
+                <p>Doğal Bitkiler</p>
+                <span>₺ 170.00</span><br>
+                <button class="more">Satın Al</button>
+            </div>
+            <div class="product-card reponsive2">
+                <img src="./assets/product2.png" alt="">
+                <p>Bitki Aksesuarları</p>
+                <span>₺ 200.00</span><br>
+                <button class="more">Satın Al</button>
+            </div>
+            <div class="product-card reponsive2">
+                <img src="./assets/product3.png" alt="">
+                <p>Yapay Bitkiler</p>
+                <span>₺ 150.00</span><br>
+                <button class="more">Satın Al</button>
+            </div>
+        </div>
+    </div>
+    <!------ABOUT------>
+    <div class="about">
+        <div class="about-title">
+            <h1>Hakkımızda</h1>
+            <p>Şimdi sipariş verin ve doğanın güzelliğini takdir edin</p>
+        </div>
+        <div class="about-card">
+            <div class="about-cards">
+                <i class="fa-solid fa-clover"></i>
+                <p>Geniş Çeşitlilik</p>
+                <span>Herkategoride daha az varyasyonla birçok farklı türdü ürün sunuyoruz</span>
+            </div>
+            <div class="about-cards">
+                <i class="fa-solid fa-box"></i>
+                <p>Hızlı & Ücretsiz Kargo</p>
+                <span>4 gün veya daha kısa teslimat süresi, ücretsiz kargo ve hızlandırılmış işlemler</span>
+            </div>
+            <div class="about-cards">
+                <i class="fa-solid fa-phone"></i>
+                <p>24/7 Destek</p>
+                <span>İşle ilgili tüm sorulara 24/7 ve gerçek zamanlı destek</span>
+            </div>
+        </div>
+    </div>
+    <!------CATAGORIES------>
+    <div class="catagories">
+        <div class="catagories-header">
+            <h1>Kategoriler</h1>
+            <span>Aradığını bul</span>
+        </div>
+
+        <div class="catagories-frames responsive">
+            <div class="catagories-frame reponsive2">
+                <img src="./assets/frame1.png" alt="">
+                <h1>Doğal Bitkiler</h1>
+            </div>
+            <div class="catagories-frame reponsive2">
+                <img src="./assets/frame2.png" alt="">
+                <h1>Bitki Aksesuarları</h1>
+            </div>
+            <div class="catagories-frame reponsive2">
+                <img src="./assets/frame3.png" alt="">
+                <h1>Yapay Bitkiler</h1>
+            </div>
+        </div>
+        <div class="catagories-end">
+            <p>Evinizi süslemek için bu ürünlere erişin ve evinizde güzellik artsın</p>
+            <div class="daha-fazla">
+                <a class="ss1" href="#top">Daha Fazla</a>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+        </div>
+    </div>
+    <!------FOOTER------>
+    <div class="footer">
+        <div class="footer-left">
+            <h1>Yeşilzihin</h1>
+            <p>Hyalinizdeki çiçeği bulmaya yardımcı oluyoruz</p>
+            <div class="footer-left-social">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+            </div>
+            <div class="footer-left-rights">
+                2023 all Right Reserved Team of use GREENMIND
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <ul>
+                <li>Bilgiler</li>
+                <li>Hakkında</li>
+                <li>Ürün</li>
+                <li>Blog</li>
+            </ul>
+            <ul>
+                <li>Şirket</li>
+                <li>Topluluk</li>
+                <li>Kariyer</li>
+                <li>Hikayem</li>
+            </ul>
+            <ul>
+                <li>İletişim</li>
+                <li>Başlarken</li>
+                <li>Fiyatlandırma</li>
+                <li>Kaynaklar</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

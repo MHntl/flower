@@ -1,0 +1,495 @@
+/*----FONT EKLEME----*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/*----TÜMÜNÜ KAPSIYAN KOD----*/
+* {
+    padding: 0;
+    margin: 0;
+    /*Padiing eklendiğinde yapı bozulmaz*/
+    /*kendi atadıgımız değerleri kullanır.*/
+    box-sizing: border-box;
+    font-family: 'Indie Flower', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*----NAVBAR----*/
+.navbar {
+    /*border: solid red 5px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.navbar-left {
+    /*border: 5px solid blue;*/
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+.navbar-left-logo {
+    /*-----LOGO-----*/
+    /*border: solid 3px yellow;*/
+    font-family: "Indie Flower";
+    text-decoration: none;
+    line-height: 64px;
+    font-size: 44px;
+    color: rgb(39, 100, 39);
+}
+
+.navbar-left-logo:hover {
+    /*--HOVER LOGO BÜYÜTME--*/
+    transition: ease .5s;
+    transform: scale(1.1);
+}
+
+.navbar-left-menü {
+    /*border: solid 3px orange;*/
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-left-menü a {
+    /*----NAVBAR MENÜ a-ITEMS----*/
+    text-decoration: none;
+    font-size: 18px;
+    color: gray;
+}
+
+.navbar-left-menü a:first-child {
+    /*--GRUP İÇERSİNDEKİ NESNEYİ ETKİLER.:last-child SON NESNEYİ ETKİLER--*/
+    font-weight: 700;
+    color: black;
+}
+
+.navbar-left-menü a:hover {
+    color: green;
+}
+
+.navbar-right {
+    /* border: 5px solid green;*/
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.navbar-right i {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.navbar-right i:hover {
+    transition: ease 0.5s;
+    transform: scale(1.1);
+    color: gray;
+}
+
+/*----BANNER----*/
+.banner {
+    /* border: solid red 5px;*/
+    display: flex;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #c1dcdc;
+}
+
+.banner-left {
+    /* border: solid green 10px;*/
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 40px;
+    padding: 40px 0 40px 50px;
+    z-index: 2;
+
+}
+
+.banner-left h1 {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 64px;
+    /* border: 5px solid purple;*/
+    width: 480px;
+}
+
+.banner-left h1 .ss {
+    text-decoration: none;
+    color: red;
+}
+
+.banner-left h1 .ss:hover {
+    color: green;
+    transition: ease .5s;
+}
+
+.banner-left-contents {
+    display: flex;
+    /*border: 5px solid gray;*/
+    gap: 50px;
+}
+
+.contents p {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.contents span {
+    font-size: 18px;
+}
+
+.contents:first-child {
+    /*İçerideki ilk nesneyi seçmede kullanılır*/
+    border-right: black 1px solid;
+    padding-right: 50px;
+}
+
+.banner-left-search {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.banner-left-search input {
+    /*Arama Butonunun kenerlarını kaldırma*/
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 18px;
+}
+
+.banner-left-search i {
+    background-color: #c1dcdc;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.banner-right {
+    /*  border: solid blue 10px;*/
+    width: 50%;
+    position: relative;
+    /*display: flex;
+    justify-content: end;*/
+
+}
+
+.banner-right img {
+    /*--IMAGE--*/
+    /* border: 5px aqua solid;*/
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(-1);
+    /*Ayna görüntüsünü alma*/
+
+}
+
+.banner-right-bg {
+    position: absolute;
+    background-color: gray;
+    width: 400px;
+    height: 360px;
+    bottom: 0;
+    right: 10%;
+    border-radius: 50% 20% 0 50%;
+
+
+}
+
+/*----PRODUCT----*/
+.product {
+    /*border: red 10px solid;*/
+    width: 90%;
+    margin: auto;
+    /* Sayfanın sağ-sol boşlugunu eşit ortala*/
+    display: flex;
+    gap: 30px;
+
+    flex-direction: column;
+
+}
+
+.product-title {
+    /*border: blue solid 5px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.more {
+    background-color: #c1dcdc;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.product-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+
+}
+
+.product-card {
+    /* border: solid 5px orange;*/
+    width: fit-content;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.product-card p {
+    font-weight: bold;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*----ABOUT----*/
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(134, 126, 126, 0.276);
+    width: 100%;
+    padding: 20px 0;
+}
+
+.about-title h1 {
+    font-size: 32px;
+}
+
+.about-title p {
+    font-size: 18px;
+    color: gray;
+
+}
+
+.about-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.about-card i {
+    font-size: 42px;
+    /*İkonun boyutunu büyütmek içinde font-size kullanılabilir*/
+    background-color: #c1dcdc;
+    padding: 20px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-card span {
+    text-align: center;
+    /*VERİLEN SATIR SAYISINA GÖRE TAŞAN KISMI "...." İLE GİZELEME*/
+    display: -webkit-box;
+    overflow: hidden;
+    /*taşan kısmı gizleyen kod*/
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /*"2" gösterilecek satırın sayısı yani 3 ve fazlasını gizler*/
+
+}
+
+.about-cards {
+    width: 100%;
+
+}
+
+/*----CATAGORIES----*/
+.catagories {
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.catagories-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.catagories-frames {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.catagories-frame img {
+    max-width: 100%;
+    height: auto;
+}
+
+.catagories-end {
+    align-items: center;
+    text-align: center;
+}
+
+.daha-fazla {
+
+    background-color: #c1dcdc;
+    margin: auto;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.ss1 {
+    text-decoration: none;
+    color: #566060;
+}
+
+/*----FOOTER----*/
+
+.footer {
+    margin: 100px 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #c1dcdc;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.footer-left h1 {
+    font-family: "Indie Flower";
+}
+
+.footerleft p {
+    font-size: 18px;
+    color: black;
+}
+
+.footer-left-social a {
+    font-size: 42px;
+    border: 1px solid #566060;
+    color: #566060;
+    padding: 25px;
+    border-radius: 50%;
+}
+
+.footer-left-social i:hover {
+    transform: scale(1.1);
+    transition: ease 0.5s;
+    color: green;
+}
+
+.footer-right {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-right ul li {
+    list-style-type: none;
+    /*LİSTELEME Özelligindeki vurguları kapatır."text-decoration:none" gibi*/
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer-right ul li:nth-child(1) {
+    /*Listedeki "1." nesneyi seçmek için kullanılır "x" x yazan yer seçilecek nesneyin sırasıdır*/
+    font-weight: 800;
+}
+
+/*----RESPONSİZE AYARLAR----*/
+/*--fit-content---*/
+
+
+@media screen and (max-width:900px) {
+
+    /*0-900px arasında bu görevleri görür*/
+    .banner-left {
+        width: 100%;
+    }
+
+    .banner-left h1 {
+        background-color: white;
+        border-radius: 20px;
+        opacity: 0.8;
+        padding: 10px;
+        font-size: 35px;
+    }
+
+    .banner-left-contents {
+        background-color: white;
+        opacity: 0.8;
+        border-radius: 20px;
+        padding: 10px;
+        width: fit-content;
+        /*---GENİŞLİĞİ İÇERİGE GÖRE OTOMATİK AYARLAR---*/
+    }
+    .responsive{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+    .reponsive2{
+        width: 60%;
+        margin:25px auto;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-right {
+        display: none;
+    }
+
+    .footer-left {
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-left-social {
+        text-align: center;
+        align-items: center;
+    }
+}
